@@ -41,7 +41,7 @@ const EditBook = () => {
         e.preventDefault();
         axios.put(`/api/update/${id}`, formData)
         .then((res) =>{
-            navigate('/');
+            navigate('/home');
             console.log(res);
         })
         .catch((err) => {

@@ -16,7 +16,7 @@ const AddBook = () => {
         axios.post('/api/books', formData)
         .then((res) => {
             console.log(res);
-            navigate('/');
+            navigate('/home');
         })
         .catch((err) => {
             console.log(err);
